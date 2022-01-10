@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/weather"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="__"
+        android:textSize="40sp"
+        tools:ignore="HardcodedText"
+        android:textColor="#ffffffff"
+        android:fontFamily="serif"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffffff"
+        android:fontFamily="serif"
+        android:text="Country"
+        android:textSize="20sp"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/Sunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Temperature: "
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:fontFamily="serif"
+            android:inputType="time"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/txtTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="__"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:fontFamily="serif"
+            android:inputType="time"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/Sunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sunrise: "
+            android:textSize="36sp"
+            android:gravity="center"
+            android:inputType="time"
+            android:textColor="#ffffffff"
+            android:fontFamily="serif"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/txtSunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="__"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:fontFamily="serif"
+            android:inputType="time"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/Sunset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sunset: "
+            android:textSize="36sp"
+            android:gravity="center"
+            android:inputType="time"
+            tools:ignore="HardcodedText"
+            android:fontFamily="serif"
+            android:textColor="#ffffffff" />
+        <TextView
+            android:id="@+id/txtSunset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="__"
+            android:textSize="36sp"
+            android:textColor="#ffffffff"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:inputType="time"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+</LinearLayout>

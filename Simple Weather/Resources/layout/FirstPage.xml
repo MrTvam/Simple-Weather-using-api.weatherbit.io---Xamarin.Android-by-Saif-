@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather" >
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1"
+        tools:ignore="PossiblyUselessParentWithBackground">
+        <TextView
+            android:text="Weather App"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="fill_parent"
+            android:id="@+id/textView1"
+            android:textSize="120px"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:ignore="HardcodedText"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="220dp" 
+            android:fontFamily="casual"
+             />
+        <TextView
+            android:text="City Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/editText1"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/textView2"
+            android:inputType="text"
+            android:fontFamily="serif"
+            android:layout_marginRight="40dp" />
+        <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:id="@+id/SubmitButton"
+            android:fontFamily="serif"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
