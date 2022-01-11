@@ -20,18 +20,22 @@ namespace Simple_Weather
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
+            FirstPage();
+
+        }
+
+        void FirstPage()
+        {
             SetContentView(Resource.Layout.FirstPage);
-            RestService _restService = new RestService();
             var City = FindViewById<EditText>(Resource.Id.editText1);
             var Submit = FindViewById<Button>(Resource.Id.SubmitButton);
-            
+
             Submit.Click += delegate
             {
 
                 GetWeather(City.Text);
 
             };
-
         }
         async void GetWeather(string place)
         {
@@ -87,6 +91,14 @@ namespace Simple_Weather
             txtSunrise.Text = sr;
             txtSunset.Text = st;
             txtTemperature.Text = temp;
+
+
+            //back
+            var back = FindViewById<Button>(Resource.Id.Back);
+            back.Click += delegate
+            {
+                FirstPage();
+            };
 
         }
     }
